@@ -8,7 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.renderer.entity.model.SlimeModel;
+import net.minecraft.client.renderer.entity.model.CreeperModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
 import net.mcreator.krtek.entity.KrtecekEntity;
@@ -20,10 +20,10 @@ public class KrtecekRenderer {
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(KrtecekEntity.entity,
-					renderManager -> new MobRenderer(renderManager, new SlimeModel(0), 0.5f) {
+					renderManager -> new MobRenderer(renderManager, new CreeperModel(), 0.5f) {
 						@Override
 						public ResourceLocation getEntityTexture(Entity entity) {
-							return new ResourceLocation("krtek:textures/krtec.png");
+							return new ResourceLocation("krtek:textures/krr.png");
 						}
 					});
 		}

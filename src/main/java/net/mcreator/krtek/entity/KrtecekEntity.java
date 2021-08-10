@@ -44,8 +44,8 @@ import net.mcreator.krtek.KrtekModElements;
 @KrtekModElements.ModElement.Tag
 public class KrtecekEntity extends KrtekModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 1f))
-					.build("krtecek").setRegistryName("krtecek");
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.7f)).build("krtecek").setRegistryName("krtecek");
 	public KrtecekEntity(KrtekModElements instance) {
 		super(instance, 1);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new KrtecekRenderer.ModelRegisterHandler());
