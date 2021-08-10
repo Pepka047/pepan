@@ -1,10 +1,135 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Rohlik",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rohlik"
+    },
+    {
+      "name": "Konskemaso",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "konskemaso"
+    },
+    {
+      "name": "Hermanek",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hermanek"
+    },
+    {
+      "name": "Lopatka",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lopatka"
+    },
+    {
+      "name": "Misimaso",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "misimaso"
+    },
+    {
+      "name": "Mafin",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mafin"
+    },
+    {
+      "name": "Konskysalam",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "konskysalam"
+    },
+    {
+      "name": "Krtecek",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "krtecek"
+    },
+    {
+      "name": "Jezek",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jezek"
+    },
+    {
+      "name": "Myska",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "myska"
+    },
+    {
+      "name": "Plzen12",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plzen_12"
+    },
+    {
+      "name": "Jezcimaso",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jezcimaso"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.krtek.mafin": "Mafin",
+      "entity.krtek.jezek": "Jezek",
+      "item.krtek.konskemaso": "Konskemaso",
+      "entity.krtek.myska": "Myska",
+      "item.krtek.misimaso": "Misimaso",
+      "item.krtek.plzen_12": "Plzen12",
+      "item.krtek.jezcimaso": "Jezcimaso",
+      "item.krtek.krtecek_spawn_egg": "Krtecek Spawn Egg",
+      "item.krtek.lopatka": "Lopatka",
+      "item.krtek.hermanek": "Hermanek",
+      "item.krtek.jezek_spawn_egg": "Jezek Spawn Egg",
+      "entity.krtek.krtecek": "Krtecek",
+      "item.krtek.konskysalam": "Konskysalam",
+      "item.krtek.rohlik": "Rohlik",
+      "item.krtek.myska_spawn_egg": "Myska Spawn Egg"
+    }
   },
   "foldersRoot": {
     "name": "~",
