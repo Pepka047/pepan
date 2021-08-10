@@ -46,7 +46,7 @@ import net.mcreator.krtek.KrtekModElements;
 public class MyskaEntity extends KrtekModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.4f, 0.3f)).build("myska").setRegistryName("myska");
+			.size(0.6f, 1.8f)).build("myska").setRegistryName("myska");
 	public MyskaEntity(KrtekModElements instance) {
 		super(instance, 1);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new MyskaRenderer.ModelRegisterHandler());

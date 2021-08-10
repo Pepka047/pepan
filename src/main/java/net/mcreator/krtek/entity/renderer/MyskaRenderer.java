@@ -8,8 +8,9 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.renderer.entity.model.SilverfishModel;
-import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.model.BipedModel;
+import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
+import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import net.mcreator.krtek.entity.MyskaEntity;
 
@@ -19,13 +20,16 @@ public class MyskaRenderer {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
-			RenderingRegistry.registerEntityRenderingHandler(MyskaEntity.entity,
-					renderManager -> new MobRenderer(renderManager, new SilverfishModel(), 0.5f) {
-						@Override
-						public ResourceLocation getEntityTexture(Entity entity) {
-							return new ResourceLocation("krtek:textures/mys1234567.png");
-						}
-					});
+			RenderingRegistry.registerEntityRenderingHandler(MyskaEntity.entity, renderManager -> {
+				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
+					@Override
+					public ResourceLocation getEntityTexture(Entity entity) {
+						return new ResourceLocation("krtek:textures/mys1234567.png");
+					}
+				};
+				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
+				return customRender;
+			});
 		}
 	}
 }
