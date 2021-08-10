@@ -108,6 +108,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "jezcimaso"
+    },
+    {
+      "name": "Krump",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "krump"
     }
   ],
   "variable_elements": [],
@@ -126,6 +135,7 @@
       "item.krtek.hermanek": "Hermanek",
       "item.krtek.jezek_spawn_egg": "Jezek Spawn Egg",
       "entity.krtek.krtecek": "Krtecek",
+      "item.krtek.krump": "Krump",
       "item.krtek.konskysalam": "Konskysalam",
       "item.krtek.rohlik": "Rohlik",
       "item.krtek.myska_spawn_egg": "Myska Spawn Egg"
